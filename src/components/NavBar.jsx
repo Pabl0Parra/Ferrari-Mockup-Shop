@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Nav({ cartCount, cartCars }) {
+function Nav({ cartCount }) {
   return (
     <nav className="nav-container">
       <div className="header-left-div">
@@ -22,13 +22,17 @@ function Nav({ cartCount, cartCars }) {
         <NavLink className="nav-link underline" to="shop">
           Shop
         </NavLink>
-        <NavLink className="cartButton" to={"cart"}>
+        <NavLink className="cart-button" to={"cart"}>
           <img
             src="https://img.icons8.com/dotty/45/000000/shopping-cart.png"
             alt="cart"
-            className="cartLogo"
+            className="cart-logo"
           ></img>
-          <span className="cartCount">{cartCount}</span>
+          <div className="cart-count-circle">
+            <div className="cart-count" style={{ textDecoration: "none" }}>
+              {cartCount}
+            </div>
+          </div>
         </NavLink>
       </div>
     </nav>
