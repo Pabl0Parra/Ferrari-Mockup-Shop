@@ -4,7 +4,7 @@
 
 A responsive Ferrari store with a functioning cart built using Create-React-App & Vite.
 
-Live Demo
+![Live demo]("https://ferrarislamina.netlify.app/")
 
 **Getting Started:**
 
